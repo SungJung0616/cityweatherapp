@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #06283D;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 18px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  transition: 0.6s ease-out;
+}
+
+.min-height {
+  height: 105px;
+}
+
+.medium-height {
+  height: 400px;
+}
+
+.max-height {
+  height: 600px;
+}
+
+.search-box{
+  width: 100%;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-box input{
+  color: #06283D;
+  width: 80%;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 32px;
+}
+
+.search-box input::placeholder{
+  font-size: 20px;
+  font-weight: 500;
+  color: #06283D;
+  text-transform: capitalize;
+}
+
+.search-box button{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  color: #06283D;
+  background: #dff6ff;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: 0.4s ease;
+}
+
+.search-box button:hover{
+  color: #fff;
+  background: #06283D;
+}
+
+.search-box i{
+  position: absolute;
+  color: #06283D;
+  font-size: 28px;
+}
+
+.weather-box{
+  text-align: center;
+}
+
+.weather-box img{
+  width: 60%;
+  margin-top: 30px;
+}
+
+.weather-box .temperature{
+  position: relative;
+  color: #06283D;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-left: -16px;
+}
+
+.weather-box .temperature span{
+  position: absolute;
+  margin-left: 4px;
+  font-size: 1.5rem;
+}
+
+.weather-box .description{
+  color: #06283D;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.weather-details{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.weather-details .humidity, .weather-details .wind{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+}
+
+.weather-details .humidity{
+  padding-left: 20px;
+  justify-content: flex-start;
+}
+
+.weather-details .wind{
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+.weather-details i{
+  color: #06283D;
+  font-size: 26px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.weather-details span{
+  color: #06283D;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.weather-details p{
+  color: #06283D;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.not-found{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  scale: 1;
+  opacity: 1;
+  display: block;
+}
+
+.not-found img{
+  width: 70%;
+}
+
+.not-found p{
+  color: #06283D;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.weather-box, .weather-details{
+  scale: 1;
+  opacity: 1;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 90%; /* 전체 폭 사용 */
+    height: 90vh;
+    padding: 10px; /* 좁은 화면에 맞춰 패딩 조정 */
+    margin-left: 18px;
+  }
+
+  .search-box input {
+    font-size: 18px; /* 폰트 크기 줄임 */
+    padding-left: 20px; /* 패딩 조정 */
+  }
+
+  .weather-box .temperature {
+    font-size: 3rem; /* 온도 폰트 크기 조정 */
+  }
+
+  .weather-box .description,
+  .weather-details span,
+  .weather-details p {
+    font-size: 16px; /* 설명 및 세부 정보 폰트 크기 조정 */
+  }
+
+  .weather-details .humidity, .weather-details .wind {
+    width: 100%; /* 습도 및 바람 세부 정보를 위한 폭 조정 */
+    justify-content: center; /* 센터 정렬로 변경 */
+    padding: 10px 0; /* 패딩 조정 */
+  }
+}
+
+
+@media (max-width: 340px) {
+  .container {
+    width: 90%; /* 전체 폭 사용 */
+    height: 90vh;
+    padding: 10px; /* 좁은 화면에 맞춰 패딩 조정 */
+    margin-left: 15px;
+  }
+
+  .search-box input {
+    font-size: 18px; /* 폰트 크기 줄임 */
+    padding-left: 20px; /* 패딩 조정 */
+  }
+
+  .weather-box .temperature {
+    font-size: 3rem; /* 온도 폰트 크기 조정 */
+  }
+
+  .weather-box .description,
+  .weather-details span,
+  .weather-details p {
+    font-size: 16px; /* 설명 및 세부 정보 폰트 크기 조정 */
+  }
+
+  .weather-details .humidity, .weather-details .wind {
+    width: 100%; /* 습도 및 바람 세부 정보를 위한 폭 조정 */
+    justify-content: center; /* 센터 정렬로 변경 */
+    padding: 10px 0; /* 패딩 조정 */
+  }
+}
