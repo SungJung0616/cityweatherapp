@@ -53,8 +53,7 @@ function App() {
     if (city === "") {      
       getCurrentLocation();
     } else {
-      getWeatherByCity(city);
-      
+      getWeatherByCity(city);      
     }
   }, [city])
 
@@ -71,13 +70,13 @@ function App() {
   };
 
   return (
-    <div className="container">
-    <SearchBox handleCityChange={handleCityChange}/>
+    <div className="container">    
     {weather && !weather.error ? (
       <WeatherDisplay weather={weather} />
     ) : (
       <NotFound />
     )}
+    <SearchBox handleCityChange={handleCityChange}/>
   </div>
 );
 }

@@ -51,11 +51,14 @@ body{
 
 .search-box input{
   color: #06283D;
-  width: 80%;
+  width: 60%;
+  height: 50px;
+  border-radius: 15rem;
   font-size: 24px;
   font-weight: 500;
   text-transform: uppercase;
   padding-left: 32px;
+  transition: all 0.3s ease-in-out;
 }
 
 .search-box input::placeholder{
@@ -63,6 +66,16 @@ body{
   font-weight: 500;
   color: #06283D;
   text-transform: capitalize;
+}
+
+.search-box input:focus {
+  border-color: #06283D;
+  background-color: #06283D;
+  color: #06283D
+}
+
+.search-box input:hover {
+  background-color: #dff6ff;  
 }
 
 .search-box button{
