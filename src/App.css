@@ -71,11 +71,11 @@ body{
 .search-box input:focus {
   border-color: #06283D;
   background-color: #06283D;
-  color: #06283D
+  color: #dff6ff
 }
 
 .search-box input:hover {
-  background-color: #dff6ff;  
+  background-color: #06283D;  
 }
 
 .search-box button{
