@@ -70,13 +70,15 @@ function App() {
   };
 
   return (
-    <div className="container">    
+
+    <div className="container">  
+    <SearchBox handleCityChange={handleCityChange}/>  
     {weather && !weather.error ? (
       <WeatherDisplay weather={weather} />
     ) : (
       <NotFound />
     )}
-    <SearchBox handleCityChange={handleCityChange}/>
+    
   </div>
 );
 }

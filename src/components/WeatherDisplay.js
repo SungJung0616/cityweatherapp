@@ -25,6 +25,7 @@ const WeatherDisplay = ({ weather }) => {
             <p>Humidity</p>
           </div>
         </div>
+        
         <div className="wind">
           <FontAwesomeIcon icon={faWind} />
           <div className="text">
