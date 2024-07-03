@@ -61,10 +61,12 @@ function App() {
   const handleCityChange = (currentCity) => {
     console.log("click", currentCity);
     if(currentCity ==="current") {
+
       setCity("");      
       
     }else{
       setCity(currentCity);
+      
       console.log("city :", city)
     }
   };
